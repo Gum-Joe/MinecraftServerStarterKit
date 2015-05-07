@@ -1,0 +1,3 @@
+if you run a script in a differnt directory, it will run in the diretory it is executed from,
+e'g:
+if i run a file called test.sh in bin/directoey from /bin, it will run in the directory /bin  

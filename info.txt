@@ -1,0 +1,19 @@
+Project info
+
+{
+	name: MinecraftServerStarterKit
+	codename: BSK
+	oringinal-name: BukkitStarterKit
+	oringinal-codename: BSK
+	OS availbleity: Windows
+	version: 1.1.60, 1.1 FINAL build 60
+	Git version tested with: 2014 Nov Realease
+	BuildTools version used: 36
+	From: http://skits.businesscatalyst.com
+	Files Stored at: http://skits.businesscatalyst.com/assets/BukkitStarterKit
+	runme.sh found at: http://skits.businesscatalyst.com/assets/runme.sh
+	Realese Date: Monday 4th May 2015
+	Servers Used: Vanilla, CraftBukkit, Spigot
+	Files: 12
+							}
+							

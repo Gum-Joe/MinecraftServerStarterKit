@@ -1,0 +1,76 @@
+*****ALL loged to BSKlog.log, command: 2>&1 | tee -a ./BSKlog.log*****
+______________________________________________________
+MAC OSX & linux ONLY:                                |
+Tells user that they are going to intall program     |
+user enters password                                 |
+command: sudo apt-get git...                         |
+User prompted to install latest java and/or java sdk |
+given website/wget or curl command                   |
+_____________________________________________________| 
+
+Copying Directorys: cp -avr <Directory>
+
+Files for Support:
+ALL FILES FOR SUPPORT EXCEPT runme.sh
+- StarterKit.sh (RUNMER.sh)
+- BuildToolsrester
+- bukkit_and_spigot_getter.sh
+- restter.sh
+- StarterKit_no_bukkit.sh
+- Updater.sh
+all checkers - folder = ./Checkers
+
+COMMAND TO SHOW PROGRESS:
+echo -ne '####################   %complete\r'
+################################################## = 100%
+##### = 10%~
+
+New downloads loacation: skits.businesscatalyst.com/assets/BukkitStarterKit
+
+runme.sh - downloaded from website
+COMMAND THAT HAPPEN AT BEGINING and end - at end do not inclde "> ./BSKlog.log" and "mkdir"
+
+mkdir ./logs > BSKlog.log
+cp ./BSKlog.log ./logs/`date +%y%m%d`.log > ./BSKlog.log
+
+AT BEGGINNING:
+echo Bukkit Starter Kit 2>&1 | tee -a ./BSKlog.log
+echo From http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
+echo Issues? Vist http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
+date 2>&1 | tee -a BSKlog.log
+
+creates folders:
+"./bin" - this is for each pary
+"./SupportDownloads" - Support files
+"./BukkitandSpigotGetter" - for BuildTools.jar
+"./Spigot_Server" - for Spigot Minecraft Server
+"./CraftBukkit_Server" - Craft Bukkit Server
+"./Basic_Server" - Vanilla server
+"./logs" - for logs
+"./bin/Checks" - checking if files are ok
+"./bin/Extracts" - Extracts
+"./SupportDownloads/Extracts" - same as above
+
+Startes download of Support to ./Support and extracts it to ./Support
+copys files to ./bin
+copys to main directory for easy access
+
+runes PART1.sh
+cd ..
+#Changes directory to ./
+runnes command of part one in RUNMER.sh
+This happens for all commands
+
+At end
+
+runnes the checkers
+returns error and re runnes the command
+one checher and resoler per files
+tries 3 times before ending and running Failuler in <area> file
+BuildTools runnes only once if fails - with prompt
+
+END
+
+
+
+
