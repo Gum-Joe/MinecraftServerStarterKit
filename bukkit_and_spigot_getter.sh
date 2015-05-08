@@ -1,4 +1,4 @@
-
+echo
 echo Getting Bukkit and Spigot... 2>&1 | tee -a ./BSKlog.log
 echo Attention! Attention! | tee -a ./BSKlog.log
 echo This could take up to 30 minutes! | tee -a ./BSKlog.log
