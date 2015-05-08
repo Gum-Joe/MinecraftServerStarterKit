@@ -10,6 +10,7 @@ echo 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 echo Making directorys 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
+
 mkdir -v ./bin 2>&1 | tee -a ./BSKlog.log
 
 mkdir -v ./SupportDownloads 2>&1 | tee -a ./BSKlog.log
@@ -39,19 +40,10 @@ echo Downloading Dependences... 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 echo All files saved @ ./SupportDownloads 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
+echo Downloading from restrosity...
+git clone https://github.com/Gum-Joe/MinecraftServerStarterKit.git -b BETAS ./bin/Extracts/Support
 
-echo Downloading Support.tar.gz @ skits.businesscatalyst.com/assets/BukkitStarterKit/Support.tar.gz 2>&1 | tee -a ./BSKlog.log
-curl "http://skits.businesscatalyst.com/assets/BukkitStarterKit/Support.tar.gz" -o ./SupportDownloads/Support.tar.gz 2>&1 | tee -a ./BSKlog.log
-echo
-mkdir -v ./SupportDownloads/Extracts/Support 2>&1 | tee -a ./BSKlog.log
-cp -pv ./SupportDownloads/Support.tar.gz ./SupportDownloads/Extracts/Support
-echo 2>&1 | tee -a ./BSKlog.log
 
-echo Unzipping... 2>&1 | tee -a ./BSKlog.log
-tar -xzvf ./SupportDownloads/Extracts/Support/Support.tar.gz -C ./SupportDownloads/Extracts/Support 2>&1 | tee -a ./BSKlog.log
-echo 2>&1 | tee -a ./BSKlog.log
-echo Copying to ./bin/Extracts 2>&1 | tee -a ./BSKlog.log
-cp -avr ./SupportDownloads/Extracts/Support ./bin/Extracts 2>&1 | tee -a ./BSKlog.log
 echo Copying into bin 2>&1 | tee -a ./BSKlog.log
 cp -rpv ./bin/Extracts/Support/* ./bin 2>&1 | tee -a ./BSKlog.log
 echo
