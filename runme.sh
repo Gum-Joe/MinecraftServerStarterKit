@@ -40,6 +40,7 @@ echo Downloading Dependences... 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 echo All files saved @ ./SupportDownloads 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
+echo
 echo Downloading from restrosity...
 git clone https://github.com/Gum-Joe/MinecraftServerStarterKit.git -b BETAS ./bin/Extracts/Support
 
