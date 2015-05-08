@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 echo Bukkit Starter Kit 2>&1 | tee -a ./BSKlog.log
 echo From http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
 echo Issues? Vist http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
