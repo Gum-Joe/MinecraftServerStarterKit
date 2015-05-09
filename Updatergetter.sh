@@ -7,8 +7,16 @@ echo 2>&1 | tee -a ./Updater.log
 echo --------------------------------- 2>&1 | tee -a ./Updater.log
 echo Preparing to Update... 2>&1 | tee -a ./Updater.log
 echo --------------------------------- 2>&1 | tee -a ./Updater.log
-echo Downloading Updater @ http://skits.businesscatalyst.com/updater.sh 2>&1 | tee -a ./Updater.log
-curl http://skits.businesscatalyst.com/assets/BukkitStarterKit/updater.sh -o ./SupportDownloads/Updater.sh 2>&1 | tee -a ./Updater.log
-cp -v ./SupportDownloads/Updater.sh ./bin/Updater.sh 2>&1 | tee -a ./Updater.log
-./bin/Updater.sh 2>&1 | tee -a ./Updater.log
-cp ./Updater.log ./logs/"Updater`date +%Y_%m_%d_%H_%M_%S`.log"
+echo Updating from restrosity...
+cd ./bin/Extracts/Support
+git fetch -v 
+cd ..
+cd ..
+cd ..
+
+echo Copying into bin 2>&1 | tee -a ./BSKlog.log
+cp -rpv ./bin/Extracts/Support/* ./bin 2>&1 | tee -a ./BSKlog.log
+echo
+echo Copying the Starter Kits
+cp -v ./bin/StarterKit.sh ./ServerKit.sh
+cp -v ./bin/StarterKit_no_bukkit.sh ./ServerKit_no_bukkit.sh
