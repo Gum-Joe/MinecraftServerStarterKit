@@ -3,7 +3,8 @@ For Minecraft Server StarterKit
 From http://skits.businesscatalyst.com
 
 #CHANGE LOG
-
+09.05.2015
+1.1: BETA version 1.1.61 (1.1 build 61) Updater Updated to include updating from Git
 07.05.2015
 
 1.1: BETA version 1.1.61 (1.1 build 61) released, includes:
