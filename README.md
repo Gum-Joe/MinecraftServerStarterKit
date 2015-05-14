@@ -1,7 +1,7 @@
 # MinecraftServerStarterKit
 For Minecraft Server StarterKit
 From http://skits.businesscatalyst.com
- [![Build Status](https://github.com/Gum-Joe/MinecraftServerStarterKit/status.txt)](https://github.com/Gum-Joe/MinecraftServerStarterKit/status.txt)
+ [![Build Status](https://github.com/Gum-Joe/MinecraftServerStarterKit)](https://github.com/Gum-Joe/MinecraftServerStarterKit)
 
 #CHANGE LOG
 09.05.2015
