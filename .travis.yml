@@ -1,4 +1,4 @@
 language: sh
 sh:
 - travistest.sh
-- exec travistest.sh
+- script: ./travistest.sh
