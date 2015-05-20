@@ -1,4 +1,6 @@
 language: bash
 
 script:
+    - git branch BETAS
+    - git checkout BETAS
     - bash StarterKit_no_bukkit.sh
