@@ -1,2 +1,3 @@
 language: sh
-sh runme.sh
+sh:
+- runme.sh
