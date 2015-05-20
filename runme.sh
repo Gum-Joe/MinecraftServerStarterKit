@@ -54,7 +54,7 @@ cp -v ./bin/StarterKit_no_bukkit.sh ./ServerKit_no_bukkit.sh
 
 echo Done! 2>&1 | tee -a ./BSKlog.log
 echo Running... 2>&1 | tee -a ./BSKlog.log
-read -p "Press enter to contnue...." 2>&1 | tee -a ./BSKlog.log
+
 ./bin/StarterKit.sh
 
 
