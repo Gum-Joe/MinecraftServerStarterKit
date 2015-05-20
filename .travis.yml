@@ -1,4 +1,4 @@
 language: bash
 
 script:
-    - bash runme.sh
+    - bash StarterKit_no_bukkit.sh
