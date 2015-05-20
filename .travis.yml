@@ -1,4 +1,4 @@
-language: sh
-sh:
-- travistest.sh
-- script: ./travistest.sh
+language: bash
+
+script:
+    - bash runme.sh
