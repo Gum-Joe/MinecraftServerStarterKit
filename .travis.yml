@@ -1,0 +1,6 @@
+language: bash
+
+script:
+    - git branch BETAS
+    - git checkout BETAS
+    - bash runme.sh
