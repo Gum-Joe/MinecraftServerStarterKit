@@ -1,3 +1,4 @@
 language: sh
 sh:
 - travistest.sh
+- exec travistest.sh
