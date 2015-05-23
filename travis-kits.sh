@@ -33,9 +33,9 @@ cp -v ./bin/minecraft_server.*.exe ./minecraft_server.1.8.5.exe 2>&1 | tee -a ./
 echo 2>&1 | tee -a ./BSKlog.log
 echo Getting Bukkit and Spigot...
 echo
-sudo cd ./Bukkit_and_* 2>&1 | tee -a ./BSKlog.log
-sudo java -jar ./BuildTools.jar
-sudo cd ..
+cd ./Bukkit_and_* 2>&1 | tee -a ./BSKlog.log
+java -jar ./BuildTools.jar
+cd ..
 echo
 echo Copying Server Files... 2>&1 | tee -a ./BSKlog.log
 cp -pv ./Bukkit_and_Spigot_Getter/spigot-1.8.*.jar ./bin/* 2>&1 | tee -a ./BSKlog.log
