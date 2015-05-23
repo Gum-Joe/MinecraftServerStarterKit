@@ -1,5 +1,5 @@
 language: bash
-
+sudo: required
 script:
     - bash create-test.sh
     - bash runme.sh
