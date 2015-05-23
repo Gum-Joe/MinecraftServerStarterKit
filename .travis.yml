@@ -1,6 +1,6 @@
 language: bash
 
 script:
-    - git branch BETAS
-    - git checkout BETAS
+    - bash create-test.sh
     - bash runme.sh
+    - bash TESTS.sh
