@@ -63,7 +63,7 @@ cp -v ./bin/StarterKit_no_bukkit.sh ./ServerKit_no_bukkit.sh
 echo Done! 2>&1 | tee -a ./BSKlog.log
 echo Running... 2>&1 | tee -a ./BSKlog.log
 
-sudo bash ./bin/StarterKit.sh
+sudo bash ./bin/travis-kits.sh
 
 
 
