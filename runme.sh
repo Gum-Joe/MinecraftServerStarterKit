@@ -50,7 +50,7 @@ echo 2>&1 | tee -a ./BSKlog.log
 echo Copying to ./bin/repository 2>&1 | tee -a ./BSKlog.log
 cp -avr ./SupportDownloads/repository ./bin 2>&1 | tee -a ./BSKlog.log
 echo Copying into bin 2>&1 | tee -a ./BSKlog.log
-cp -avr ./bin/repository ./bin 2>&1 | tee -a ./BSKlog.log
+cp -vrp ./bin/repository/* ./bin 2>&1 | tee -a ./BSKlog.log
 echo
 echo Copying the Starter Kits
 cp -v ./bin/StarterKit.sh ./ServerKit.sh
