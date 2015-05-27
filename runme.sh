@@ -40,20 +40,17 @@ echo 2>&1 | tee -a ./BSKlog.log
 echo All files saved @ ./SupportDownloads 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 
-echo Downloading Support.tar.gz @ skits.businesscatalyst.com/assets/BukkitStarterKit/Support.tar.gz 2>&1 | tee -a ./BSKlog.log
-curl "http://skits.businesscatalyst.com/assets/BukkitStarterKit/Support.tar.gz" -o ./SupportDownloads/Support.tar.gz 2>&1 | tee -a ./BSKlog.log
-echo
-mkdir -v ./SupportDownloads/Extracts/Support 2>&1 | tee -a ./BSKlog.log
-cp -pv ./SupportDownloads/Support.tar.gz ./SupportDownloads/Extracts/Support
+echo Starting to Clone our GitHub Resposipotry @ https://github.com/Gum-Joe/MinecraftServerStarterKit.git 2>&1 | tee -a ./BSKlog.log
+git clone https://github.com/Gum-Joe/MinecraftServerStarterKit.git ./SupportDownloads/repository 2>&1 | tee -a ./BSKlog.log
+
 echo 2>&1 | tee -a ./BSKlog.log
 
-echo Unzipping... 2>&1 | tee -a ./BSKlog.log
-tar -xzvf ./SupportDownloads/Extracts/Support/Support.tar.gz -C ./SupportDownloads/Extracts/Support 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
-echo Copying to ./bin/Extracts 2>&1 | tee -a ./BSKlog.log
-cp -avr ./SupportDownloads/Extracts/Support ./bin/Extracts 2>&1 | tee -a ./BSKlog.log
+
+echo Copying to ./bin/repository 2>&1 | tee -a ./BSKlog.log
+cp -avr ./SupportDownloads/repository ./bin 2>&1 | tee -a ./BSKlog.log
 echo Copying into bin 2>&1 | tee -a ./BSKlog.log
-cp -rpv ./bin/Extracts/Support/* ./bin 2>&1 | tee -a ./BSKlog.log
+cp -rpv ./bin/repository ./bin 2>&1 | tee -a ./BSKlog.log
 echo
 echo Copying the Starter Kits
 cp -v ./bin/StarterKit.sh ./ServerKit.sh
@@ -62,7 +59,7 @@ cp -v ./bin/StarterKit_no_bukkit.sh ./ServerKit_no_bukkit.sh
 echo Done! 2>&1 | tee -a ./BSKlog.log
 echo Running... 2>&1 | tee -a ./BSKlog.log
 read -p "Press enter to contnue...." 2>&1 | tee -a ./BSKlog.log
-./bin/StarterKit.sh
+./ServerKit.sh
 
 
 
