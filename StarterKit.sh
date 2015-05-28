@@ -27,8 +27,8 @@ echo Getting Basic Vanilla Minecraft Server... 2>&1 | tee -a ./BSKlog.log
 
 echo 2>&1 | tee -a ./BSKlog.log
 
-curl -k https://s3.amazonaws.com/Minecraft.Download/versions/1.8.*/minecraft_server.1.8.*.exe -o ./SupportDownloads/minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
-cp -v ./SupportDownloads/minecraft_server.1.8.*.exe ./bin/minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
+curl -k https://s3.amazonaws.com/Minecraft.Download/versions/1.8.6/minecraft_server.1.8.6.exe -o ./SupportDownloads/minecraft_server.1.8.6.exe 2>&1 | tee -a ./BSKlog.log
+cp -v ./SupportDownloads/minecraft_server.1.8.6.exe ./bin/minecraft_server.1.8.6.exe 2>&1 | tee -a ./BSKlog.log
 cp -v ./bin/minecraft_server.1.8.*.exe ./minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 echo Getting Bukkit and Spigot...
