@@ -27,24 +27,24 @@ echo Getting Basic Vanilla Minecraft Server... 2>&1 | tee -a ./BSKlog.log
 
 echo 2>&1 | tee -a ./BSKlog.log
 
-curl -k https://s3.amazonaws.com/Minecraft.Download/versions/1.8.3/minecraft_server.1.8.3.exe -o ./SupportDownloads/minecraft_server.1.8.3.exe 2>&1 | tee -a ./BSKlog.log
-cp -v ./SupportDownloads/minecraft_server.1.8.3.exe ./bin/minecraft_server.1.8.3.exe 2>&1 | tee -a ./BSKlog.log
-cp -v ./bin/minecraft_server.1.8.3.exe ./minecraft_server.1.8.3.exe 2>&1 | tee -a ./BSKlog.log
+curl -k https://s3.amazonaws.com/Minecraft.Download/versions/1.8.*/minecraft_server.1.8.*.exe -o ./SupportDownloads/minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
+cp -v ./SupportDownloads/minecraft_server.1.8.*.exe ./bin/minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
+cp -v ./bin/minecraft_server.1.8.*.exe ./minecraft_server.1.8.*.exe 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 echo Getting Bukkit and Spigot...
 echo
 ./bin/bukkit_and_spigot_getter.sh 2>&1 | tee -a ./BSKlog.log
 echo
 echo Copying Server Files... 2>&1 | tee -a ./BSKlog.log
-cp -v ./Bukkit_and_Spigot_Getter/spigot-1.8.3.jar ./bin/spigot-1.8.3.jar 2>&1 | tee -a ./BSKlog.log
-cp -v ./Bukkit_and_Spigot_Getter/craftbukkit-1.8.3.jar ./bin/craftbukkit-1.8.3.jar
-cp -v ./minecraft_server.1.8.3.exe ./Executable_Basic_Server/minecraft_server.1.8.3.exe
+cp -v ./Bukkit_and_Spigot_Getter/spigot-1.8.*.jar ./bin/spigot-1.8.*.jar 2>&1 | tee -a ./BSKlog.log
+cp -v ./Bukkit_and_Spigot_Getter/craftbukkit-1.8.*.jar ./bin/craftbukkit-1.8.*.jar
+cp -v ./minecraft_server.1.8.*.exe ./Executable_Basic_Server/minecraft_server.1.8.*.exe
 echo 2>&1 | tee -a ./BSKlog.log
-cp -v ./bin/spigot-1.8.3.jar ./spigot-1.8.3.jar 2>&1 | tee -a ./BSKlog.log
-cp -v ./bin/craftbukkit-1.8.3.jar ./craftbukkit-1.8.3.jar 2>&1 | tee -a ./BSKlog.log
+cp -v ./bin/spigot-1.8.*.jar ./spigot-1.8.*.jar 2>&1 | tee -a ./BSKlog.log
+cp -v ./bin/craftbukkit-1.8.*.jar ./craftbukkit-1.8.*.jar 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
-cp -v ./spigot-1.8.3.jar ./Spigot_Server
-cp -v ./craftbukkit-1.8.3.jar ./CraftBukkit_Server
+cp -pv ./spigot-1.8.*.jar ./Spigot_Server
+cp -pv ./craftbukkit-1.8.*.jar ./CraftBukkit_Server
 echo 2>&1 | tee -a ./BSKlog.log
 
 echo Done! 2>&1 | tee -a ./BSKlog.log
