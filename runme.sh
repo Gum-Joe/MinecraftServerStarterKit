@@ -41,7 +41,7 @@ echo All files saved @ ./SupportDownloads 2>&1 | tee -a ./BSKlog.log
 echo 2>&1 | tee -a ./BSKlog.log
 
 echo Starting to Clone our GitHub Resposipotry @ https://github.com/Gum-Joe/MinecraftServerStarterKit.git 2>&1 | tee -a ./BSKlog.log
-git clone https://github.com/Gum-Joe/MinecraftServerStarterKit.git ./SupportDownloads/repository 2>&1 | tee -a ./BSKlog.log
+git clone https://github.com/Gum-Joe/MinecraftServerStarterKit.git -b Gum-Joe-patch-1-BETA ./SupportDownloads/repository 2>&1 | tee -a ./BSKlog.log
 
 echo 2>&1 | tee -a ./BSKlog.log
 
