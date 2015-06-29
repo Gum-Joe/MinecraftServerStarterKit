@@ -1,0 +1,6 @@
+test:
+  override:
+    - sudo mkdir ./testing
+    - cp -v ./runme.sh ./testing/runme.sh
+    - cd testing
+    - sh ./runme.sh
