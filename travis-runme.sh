@@ -1,3 +1,4 @@
+
 echo Bukkit Starter Kit 2>&1 | tee -a ./BSKlog.log
 echo From http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
 echo Issues? Vist http://skits.businesscatalyst.com 2>&1 | tee -a ./BSKlog.log
@@ -62,7 +63,7 @@ cp -v ./bin/StarterKit_no_bukkit.sh ./ServerKit_no_bukkit.sh
 echo Done! 2>&1 | tee -a ./BSKlog.log
 echo Running... 2>&1 | tee -a ./BSKlog.log
 
-./bin/StarterKit.sh
+sudo ./bin/StarterKit.sh
 
 
 

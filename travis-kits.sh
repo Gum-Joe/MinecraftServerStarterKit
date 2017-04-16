@@ -33,7 +33,9 @@ cp -v ./bin/minecraft_server.*.exe ./minecraft_server.1.8.5.exe 2>&1 | tee -a ./
 echo 2>&1 | tee -a ./BSKlog.log
 echo Getting Bukkit and Spigot...
 echo
-./bin/bukkit_and_spigot_getter.sh 2>&1 | tee -a ./BSKlog.log
+cd ./Bukkit_and_* 2>&1 | tee -a ./BSKlog.log
+java -jar ./BuildTools.jar
+cd ..
 echo
 echo Copying Server Files... 2>&1 | tee -a ./BSKlog.log
 cp -pv ./Bukkit_and_Spigot_Getter/spigot-1.8.*.jar ./bin/* 2>&1 | tee -a ./BSKlog.log
@@ -206,4 +208,3 @@ echo To change the plugins config, change the files localed @ plugins/plugin nam
 echo Finished! 2>&1 | tee -a ./BSKlog.log
 echo Now the rest is up to you, read Notes after setup to help fine tune your server. 2>&1 | tee -a ./BSKlog.log
 cp ./BSKlog.log ./logs/`date +%Y_%m_%d_%H_%M_%S`.log
-
