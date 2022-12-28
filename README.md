@@ -1,3 +1,7 @@
+The thing that got me programming in the first place - setting up a Spigot Minecraft server takes a while, this script automates that and includes default configs, leaving you with folders for each server type (Spigot, Bukkit, Vanilla) at the end.
+
+Kept for historical purposes.
+
 # MinecraftServerStarterKit
 For Minecraft Server StarterKit
 From http://skits.businesscatalyst.com
