@@ -5,7 +5,7 @@ Kept for historical purposes.
 # MinecraftServerStarterKit
 For Minecraft Server StarterKit
 From http://skits.businesscatalyst.com
- [![Build Status](https://github.com/Gum-Joe/MinecraftServerStarterKit?branch=master)](https://github.com/Gum-Joe/MinecraftServerStarterKit)
+ [![Build Status](https://travis-ci.org/Gum-Joe/MinecraftServerStarterKit?branch=master)](https://travis-ci.org/Gum-Joe/MinecraftServerStarterKit)
 
 
 #CHANGE LOG
